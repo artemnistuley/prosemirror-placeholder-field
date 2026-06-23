@@ -26,6 +26,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",
+    "jsdom": "^29.1.1",
     "np": "^10.2.0",
     "prosemirror-commands": "^1.7.1",
     "prosemirror-example-setup": "^1.2.3",
@@ -46,6 +47,7 @@
   "scripts": {
     "dev": "vite demo",
     "build_demo": "vite build demo",
+    "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prebuild": "rm -rf dist",
     "build": "rollup -c",
